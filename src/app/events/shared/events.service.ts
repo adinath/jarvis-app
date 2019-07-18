@@ -5,6 +5,9 @@ export class EventService {
     getEvents() {
         return EVENTS
     }
+    getEvent(id:any) {
+        return EVENTS[id]
+    }
 }
 
 const EVENTS = [{
