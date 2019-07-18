@@ -1,6 +1,5 @@
 <div>
     <h1> Upcoming Angular Events </h1>
     <hr/>
-    <event-thumbnail *ngFor="let event of events"  [event]="event" #thumbnail (eventClick)="handleEventClicked($event)"></event-thumbnail>
-    <button (click)="thumbnail.logfoo()">Log Foo!!</button>
+    <event-thumbnail #thumbnail *ngFor="let event of events"  [event]="event" (eventClick)="handleEventClicked($event)"></event-thumbnail>
 </div>
