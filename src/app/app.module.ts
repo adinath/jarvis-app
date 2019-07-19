@@ -28,8 +28,13 @@ import { EventListResolverService } from './events/event-list-resolver.service'
   providers: [
     EventService, 
     EventRouteActivatorService,
-    EventListResolverService
+    EventListResolverService,
+    {provide: 'canDeactivateCreateEvent', useValue: checkDirtyState}
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function checkDirtyState(){
+  return window.confirm("Do you want to navigate away?")
+}
