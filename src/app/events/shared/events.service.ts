@@ -11,7 +11,7 @@ export class EventService {
 }
 
 const EVENTS = [{
-    id: 1,
+    id: 0,
     name: 'Angular Connect',
     date: '1/1/2020',
     time: '10:00 am',
@@ -23,7 +23,7 @@ const EVENTS = [{
     }
 }
 ,{
-    id: 2,
+    id: 1,
     name: 'Angular Disconnect',
     date: '1/1/2020',
     time: '10:00 am',
@@ -35,7 +35,7 @@ const EVENTS = [{
     }
 }
 ,{
-    id: 4,
+    id: 2,
     name: 'Angular Returns',
     date: '1/1/2020',
     time: '10:00 am',
