@@ -10,6 +10,7 @@ import { EventDetailsComponent } from './events/event-details/event-details.comp
 import { CreateEventComponent } from './events/create-event.component';
 import { Error404Component } from './errors/404.component';
 import { EventRouteActivatorService } from './events/shared/event-route-activator.service';
+import { EventListResolverService } from './events/event-list-resolver.service'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,11 @@ import { EventRouteActivatorService } from './events/shared/event-route-activato
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [EventService, EventRouteActivatorService],
+  providers: [
+    EventService, 
+    EventRouteActivatorService,
+    EventListResolverService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
